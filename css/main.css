@@ -82,125 +82,91 @@ textarea {
   padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
   /* General Styles*/
-  html {
-	font-size: 16px;
-	color: #222;
-	background-color: #202322;
-}
 
   html {
-	color: #222;
-	line-height: 1.4;
-}
+	  font-size: 16px;
+    height: 100%;
+  }
 
   body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 1em;
-}
+   color: #e2e3ed;
+	 font-family: "Open Sans", sans-serif;
+	 font-size: 1em;
+   height: 100%;
+   text-align: left;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-  body {
-	margin: 0;
-}
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+  }
 
-  .content-wrapper {
-	max-width: 1200px;
-}
-
-  .signup .form {
-	margin-top: 30px;
-	background-color: #527158;
-	align-items: center;
-	display: flex;
-	flex-flow: row wrap;
-	color: #ffffff;
-}
-
-.hero-area {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	color: #fff;
-	background: url("../img/hero-img.png"); center no-repeat #333;
-	background-size: cover;
-}
-
-.hero-area h1 {
-	font-weight: normal;
-}
-
-
-h1 {
-	font-family: "Poppins", sans-serif;
-	font-size: 1.875rem;
-	font-weight: 400;
-	margin: 0.67em 0;
-}
-
-h2 {
+  h2 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+  margin: 0;
 }
 
 h3, h4 {
-	font-family: "Poppins", sans-serif;
-	font-size: 1.125rem;
-	font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 20px 0;
 }
 
 p {
-	font-size: .875rem;
-	line-height: 1.125rem; 
-}
-
-a {
-	color: #c2e3ed;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-ul li {
-	display: inline-block;
-}
-
-address {
-	font-style: normal;
+  font-size: .875rem;
+  line-height: 1.285; 
 }
 
 img {
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 figure {
-	margin: 0;
+  margin: 0;
 }
 
 address {
-
+  font-style: normal;
 }
-/*Header and Footer Styles */	
+
+.content-wrapper {
+  margin: 50px 0;
+  width: 90%;
+}
+
+/*Base Header and Footer Styles */	
 header, footer {
   align-items: center;
+  background-color: #202322;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #202322;
 }
 
 header{
   padding: 15px 0;
 }
 
-header .content-wrapper{
+header .content-wrapper {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  width: 100%;
 }
 
 header figure {
@@ -212,43 +178,53 @@ header figure {
 }
 
 .header-divider {
-  width: 111%;
-  display: flex;
-  justify-content: center;
-  border-top: 2px solid #3a3a3a;
-  margin-top: 10px;
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header nav {   /* nav for mobile 360px wide */
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 60%  /*header nav is 220px wide or 60% of design comp width */
-}
-
-header nav ul{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   flex-flow: row wrap;
-  width: 50%;
-  padding: 0;
-  margin-bottom: 0;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: space-around;
+  text-transform: uppercase;
+  width: 60%;  /*header nav is 220px wide or 60% of design comp width */
 }
 
-header nav ul li{
-  font-size: 1.125rem;
-  font-weight: bold;
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-footer{
-  color: #ffffff;
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  flex-direction: column;
   text-align: center;
 }
 
-footer .content-wrapper{  /*--mobile first--*/
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {  /*--mobile first--*/
   width: 55%;
   margin: 50px 0;
+}
+
+footer {
+  margin-left: 
+} 
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -267,54 +243,91 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer p {
-  margin: 0;
+footer .social-icons p i {
+   font-size: 1.3125em;
 }
 
-.copyright p {
-  margin-bottom: 10px;
-}
-
-.contact h4 {
-  margin: 55px 0 20px 0;
-}
-
-.social {
-  margin-bottom: 50px;
+footer .copyright {
+  margin: 20px 0;
 }
 
 /*Mobile Styles Homepage*/
 /*Hero Area*/
-.hero-area {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	color: #fff;
-	background: url(../img/hero-img.png); center no-repeat #333;
-	background-size: cover;
-	padding-bottom: 300px;
+ main .hero-area {
+	background-image: url("../img/hero-image-mobile.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.hero-area h1 {
-	font-weight: normal;
+main .hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  min-height: 500px;
+}
+img {
+  height: 50%;
+  width: 100%;
 }
 
-/*signup buttom*/
-.signup {
+main .hero-area h1 {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+	font-weight: 500;
+  line-height: 1.2
+}
+
+.map figure {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80%;
+  width: 100%;
+} 
+
+.map iframe {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*Aside*/
+aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
-  color: #ffffff;
 }
 
-.signup h3 { 
-  font-weight: normal;
+aside .form {
+  margin-top: 30px;
 }
 
-.form {
-  margin-bottom: 55px;
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -324,21 +337,30 @@ footer p {
   align-items: center;
   flex-flow: row wrap;
   color: #ffffff;
-  background: url('../img/mask-2.png') center no-repeat #333;
+  background: url("../img/unplugged-retreat-features.png");
   background-size: cover;
+  background-position: center;
 }
 
-.features-items {
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  margin: 30px 0;
+  width: 63%;
+}
+
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  text-align: center;
 }
 
 .features-item {
-  width: 55%;
-  margin-bottom: 55px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features i {
@@ -348,38 +370,25 @@ footer p {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
-  color: #ffffff;
-  font-weight: normal;
 }
 
 .reviews h2 {
-  font-weight: normal;
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
+  margin: 20px 0;
   width: 55%;
-  font-weight: normal;
-}
-
-.prior-retreat p {
-  margin-bottom: 50px;
-}
-
-.reviews figure {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* -------------------- Mobile Styles - About Page -------------------- */
@@ -391,22 +400,13 @@ footer p {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-  color: #ffffff;
-}
-
-.mission h2 {
-  font-weight: normal;
-}
-
-.mission .content-wrapper {
-  margin: 50px 0;
 }
 
   /*Map*/
   .map figure {
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 80%%;
     overflow: hidden;
     position: relative;
   }
@@ -426,56 +426,49 @@ footer p {
     align-items: center;
     flex-flow: row wrap;
     background-color: #2a423a;
-    color: #ffffff;
    }
 
-   .contact-section h2, h3{
-    font-weight: normal;
-   }
-
-   address{
-    line-height: normal;
-  }
-
-  .contact-section .content-wrapper {
-    margin: 50px 0;
+  .contact-content p {
+    margin: 0;
   }
 
   /* -------------------- Mobile Styles - FAQ Page -------------------- */
 
   /* FAQ */
-.faq-section{
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-  color: #ffffff;
-  width: 100%;
 }
 
-.faq-section .content-wrapper{
+.faq .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 45px 0;
+  margin: 50px 0 0 0;
 }
 
-.faq-section h2{
-  text-transform: capitalize;
-  font-weight: normal;
-}
-
-.faq-section h4{
-  font-weight: normal;
-  line-height: 1.5rem;
-  margin: 0 0 15px 0;
+.faq h2{
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .faq-content{
   margin-bottom: 50px;
 }
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333; 
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -561,32 +554,6 @@ footer p {
   clear: both;
 }
 
-aside .form {
-  margin-top: 30px;
-}
-
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -594,311 +561,305 @@ input[type=button] {
    ========================================================================== */
 
  /*Tablet*/
- @media screen and (min-width: 768px) {
+ @media only screen and (min-width: 768px) {
 	.content-wrapper {
-		width: 85%;
+    margin: 100px 0;
 	}
 
- /*Header and Footer*/
- header .content-wrapper {
-	width: 85%;
-	justify-content: space-between;
-	align-items: center;
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+ /*Header*/
+ header {
+	 justify-content: space-around;
+	 padding: 33px 0;
   }
 
-  header figure{
-    width: 35%;
-    display: flex;
-    justify-content: flex-start;
-       }
+  header .content-wrapper {
+     width: 100%;
+     justify-content: space-between;
+    }
 
-  .header-divider{
-    width: 35%;
-    border-top: none;
-    margin-top: 0;
-    display: flex;
-    align-items: flex-start;
-       }
+    header figure {
+      width: 30%;
+    }
 
-    header nav{
-      width: 100%;
-      justify-content: flex-end;
-      flex-flow: row wrap;
-       }
+    header nav {
+       width: 20%;
+     }
 
      header nav ul{
-        width: 55%;
-        margin: 0;
         justify-content: space-between;
-       }
+     }
 
-     footer .content-wrapper{
-         width: 90%;
-       }
+     .header-divider {
+        display: none;
+     }
 
-      footer .footer-content{
-         display: flex;
-         justify-content: space-around;
-         align-items: flex-start;
-         flex-flow: row wrap;
-         width: 100%;
-       }
-
-       .contact, .social{
-         width: 25%;
-         padding: 0;
-       }
-
-       footer h4{
-         font-size: 1.5rem;
-         margin-top: 55px;
-       }
-
-       .copyright{
-         margin-top: 90px;
-         text-align: center;
-       }
-
-       /*----- Home Page -----*/
-
-       /*Hero Area*/
-       .hero-area h1{
-         font-size: 3rem;
-       }
-
-       /*Signup*/
-       .signup .content-wrapper{
-         display: flex;
-         flex-flow: row wrap;
-         justify-content: space-around;
-         align-items: flex-start;
-       }
-
-       .signup .form {
-         margin-top: 50px;
-       }
-
-       .form-description, .form{
-         width: 45%;
-         margin: 50px 0 50px 0;
-       }
-
-       .form-description h3, .form h3{
-         font-size: 1.5rem;
-         line-height: 1.875rem;
-         margin: 0;
-       }
-
-       .form h3{
-         width: 100%;
-         margin-bottom: 25px;
-       }
-
-       .form-description p{
-         width: 100%;
-         margin-top: 25px;
-       }
-
-       input[type=button]{
-         padding: 16px 0;
-       }
-
+     /*Hero Area */
+    .hero-area {
+       min-height: 600px;
+     }
+  
+     .hero-area h1 {
+       font-size: 3em;
+       line-height: 1;
+      margin: 0;
+     }
+      
+       /* Aside */
        aside .content-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center
-       }
+          margin: 50px 0;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+         }
 
-       /*Features*/
-       .features-items{
-        align-items: center;
-        display: flex;
-        flex-flow: row wrap;
-         justify-content: space-around;
-       }
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form {
+          width: 40%;
+          margin: 0;
+         }
 
-       .features-item{
-         width: 35%;
-       }
+          /* Features */
 
-       /*Reviews*/
-       .reviews{
-         background-color: #2a423a;
-       }
+         .features h2 {
+             margin-bottom: 20px;
+          }
 
-       .reviews .content-wrapper{
-         display: flex;
-         justify-content: flex-start;
-         align-items: flex-start;
-         flex-flow: row wrap;
-         margin: 100px 0;
-       }
+         .features article {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-flow: column wrap;
+             flex-basis: 50%;
+            }
+  
+           .features .features-item-description {
+            width: 62%;
+            }
 
-       .reviews figure{
-         width: 50%;
-       }
+            .features i {
+             margin-bottom: 30px;
+            }
 
-       .reviews h2{
-         width: 75%;
-         font-size: 2.25rem;
-       }
+            /* Reviews */
+             .reviews article {
+             display: flex;
+             justify-content: space-between;
+             }
 
-       .prior-retreat{
-         width: 45%;
-         margin-left: 30px;
-       }
+            .reviews h2 {
+             width: 85%;
+            }
 
-       .prior-retreat h3{
-         width: 100%;
-         margin: 0;
-       }
+             .reviews article figure,
+             .reviews article div {
+             width: 49%;
+             }
 
-       .prior-retreat p{
-         margin: 0;
-       }
+             .reviews h3 {
+             width: 75%;
+             margin: 0;
+             }
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
 
-       /*----- About Page -----*/
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-       /*Mission*/
-       .mission-content{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-       }
+  footer .contact {
+    margin-bottom: 0;
+  }
 
-       .mission-content p{
-         width: 45%;
-       }
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
 
-       /*Map*/
-       .map figure{
-         padding-bottom: 45%;
-       }
+  footer p {
+      line-height: 1.285;
+  }
 
-       /*Contact*/
-       .contact-section .content-wrapper h1{
-         width: 100%;
-       }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  
+  footer .copyright {
+    width: 100%;
+  }
 
-       .contact-content{
-         display: flex;
-         justify-content: space-between;
-         align-items: flex-start;
-       }
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
 
-       .contact-content div{
-         width: 45%;
-       }
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
 
-       .contact-content h3{
-         font-size: 1.5rem;
-       }
+  .mission-content p {
+    width: 45%;
+  }
 
-       .contact-content address{
-         font-size: 0.875rem;
-         line-height: 1.125rem;
-       }
+  .map figure {
+    padding-bottom: 45.5%;
+  }
 
-       /*----- FAQ Page -----*/
-       .faq-section .content-wrapper{
-         justify-content: space-between;
-         align-items: flex-start;
-       }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-       .faq-section .content-wrapper h2{
-         width: 100%;
-         justify-content: space-between;
-       }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-       .faq-content{
-         flex-basis: 40%;
-       }
-   }
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
 
-   @media screen and (min-width: 1200px) {
-      /*---------- Desktop styles ----------*/
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
-      .content-wrapper{
-        width: 80%;
-      }
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
 
-      /*Header, Footer*/
-      header .content-wrapper{
-        width: 80%;
-      }
+  .faq-content {
+    flex-basis: 45%;
+  }
 
-     /*Header, Footer*/
-      header .content-wrapper{
-        width: 80%;
-      }
+  .faq h2 {
+    width: 100%;
+  }
 
-      header nav ul{
-        width: 30%;
-      }
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+}
 
-      footer .social{
-        width: 15%;
-      }
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
 
-      /*----- Home Page -----*/
-      /*Hero Area*/
-      .hero-area{
-        padding-bottom: 440px;
-      }
-      .hero-area h1{
-        font-size: 3.75rem;
-        font-weight: normal;
-        width: 75%;
-      }
+  header {
+    padding: 15px 0;
+  }
 
-      /*Signup*/
-      .signup .content-wrapper{
-        justify-content: space-around;
-      }
+  .content-wrapper {
+    max-width: 960px;
+  }
 
-      .form-description, .form{
-        width: 33%;
-      }
+  h2 {
+    font-size: 2.25em;
+  }
 
-      .form-description p{
-        width: 85%;
-      }
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
 
-      /*Features*/
-      .features-items{
-        justify-content: space-around;
-      }
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
 
-      .features-item{
-        width: 17%;
-        margin: 0 80px 90px 80px;
-      }
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+  }
 
-      .features h2{
-        font-weight: normal;
-        font-size: 2.25rem;
-      }
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
-      .features-item p{
-        width: 100%;
-      }
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
 
-      /*Reviews*/
-      .prior-retreat{
-        margin-left: 45px;
-      }
+  .form-description p {
+    font-size: 1.125em;
+  }
 
-      .reviews figure{
-        width: 48%;
-      }
+  /* Features */
 
-      /*----- About Page -----*/
+  .features h2 {
+    width: 90%;
+  }
 
-      /*Map*/
-      .map figure{
-        padding-bottom: 37.5%;
-      }
-   }
+  .features article {
+    flex-basis: 33%;
+  }
+  
+  /* Reviews */
+  
+  .reviews h2 {
+    padding-bottom: 50px; 
+  }
+  
+  .reviews article div {
+    width: 42%;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+      font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+    
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
+}
 
 /* ==========================================================================
    Print styles.
@@ -913,16 +874,18 @@ input[type=button] {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -934,18 +897,19 @@ input[type=button] {
   a[href^="javascript:"]:after {
     content: "";
   }
+  
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
- 
   /*
      * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
     display: table-header-group;
@@ -965,4 +929,6 @@ input[type=button] {
     page-break-after: avoid;
   }
 }
+   
 
+    
