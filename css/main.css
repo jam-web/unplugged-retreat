@@ -254,7 +254,7 @@ footer .copyright {
 /*Mobile Styles Homepage*/
 /*Hero Area*/
  main .hero-area {
-	background-image: url("../img/hero-image-mobile.jpg"); 
+	background-image: url("../img/jake-melara-30679-unsplash.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   color: #ffffff;
-  background: url("../img/unplugged-retreat-features.png");
+  background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
   background-position: center;
 }
